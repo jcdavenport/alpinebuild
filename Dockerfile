@@ -11,7 +11,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing">>/etc/apk/repositor
     apk update && \
     apk add curl supervisor bash openssh git \
     terminator terminus-font wireshark-gtk \
-    xfce4 xvfb x11vnc firefox wqy-zenhei && \
+    xfce4 xvfb x11vnc firefox wqy-zenhei gnome-icon-theme && \
     ssh-keygen -A && \
     sed -i 's/#PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     echo "root:root" chpasswd && \
